@@ -1,1 +1,0 @@
-# sezrab.github.io
