@@ -35,32 +35,13 @@
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '1692656822';
+    var serviceWorkerVersion = '834783210';
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
 </head>
 
 <body>
-  <script>
-    document.addEventListener('wheel', function (e) {
-      e.ctrlKey && e.preventDefault();
-    }, {
-      passive: false,
-    });
-  </script>
-  <script>
-    window.addEventListener('keydown', function (e) {
-      if (event.metaKey || event.ctrlKey) {
-        switch (event.key) {
-          case '=':
-          case '-':
-            event.preventDefault();
-            break;
-        }
-      }
-    });
-  </script>
   <script>
     window.addEventListener('load', function (ev) {
       // Download main.dart.js
@@ -73,6 +54,13 @@
       }).then(function (appRunner) {
         return appRunner.runApp();
       });
+    });
+  </script>
+  <script>
+    document.addEventListener('wheel', function (e) {
+      e.ctrlKey && e.preventDefault();
+    }, {
+      passive: false,
     });
   </script>
 </body>
